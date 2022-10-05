@@ -30,7 +30,7 @@ wss.on('connection', function connection(ws) {
      ws.send(JSON.stringify(restaurants[index]));
 
      console.log(`[${client.id}] has been send ${client.send_count} times.`);
-  }, 1_000);
+  }, 10_000);
 
   ws.on('close', function () {
     console.info(`[${wss.clients.size}] clients has been connected!`);
