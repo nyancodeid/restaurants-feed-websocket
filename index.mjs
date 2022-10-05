@@ -3,7 +3,7 @@ import { WebSocketServer } from 'ws';
 
 import { restaurants } from './restaurants.mjs';
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 8080;
 const wss = new WebSocketServer({ port });
 const clients = new Map();
 
